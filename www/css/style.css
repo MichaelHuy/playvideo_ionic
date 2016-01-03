@@ -1,0 +1,51 @@
+/* Empty. Add your own CSS if you like */
+/* common*/
+.item-thumbnail-left > img:first-child
+ {
+
+ 	  max-width: 127px;
+ }
+.item-thumbnail-left{
+  padding-left: 151px;
+}
+.overlay {
+  position: absolute;
+  width: 64px;
+  height: 80px;
+  left: 74px;
+  top: 10px;
+  background-color: black;
+  opacity: 0.7;
+}
+.text-overlay {
+  text-align: center;
+  opacity: 1;
+  color: white;
+  margin-top: 6px;
+  font-size: 13px;
+}
+.favorite-button {
+
+  position: absolute;
+  right: 0px;
+  z-index: 9999;
+  top: 62px;
+}
+.tabs {
+	background-color: #ac0809 !important;
+}
+
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+	margin-top: -2px;
+	border-style: solid;
+	border-width: 3px 0 0 0;
+	/*border-color: #ef4e3a; */
+	color: white;
+	opacity: 0.7;
+}
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+	border-color: white!important;
+	color:rgba(26, 26, 193, 0.88) !important;
+	opacity: 1 !important;
+    font-size: 19px;
+}

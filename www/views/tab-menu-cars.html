@@ -1,0 +1,17 @@
+<ion-view view-title="Cars">
+  <ion-content class="padding">
+      
+      <div class="video" data-ng-repeat="item in items">
+          <a class="item item-thumbnail-left" ng-click="clickOnItemOfMenu(item)">
+              <image ng-src="{{ item.firstImage }}">
+                <div class="overlay">
+                    <div class="text-overlay" style="margin-top:11px">{{item.numberVideo}}</div>
+                    <div class="text-overlay" style="margin-top: 0px;">Video</div>
+                    <div class="text-overlay ion-android-menu" style="font-size:19px;margin-top:-5px"></div>
+                </div>
+              <div class="item-text-wrap wrap">{{item.name}}</div>
+          </a>          
+      </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <ion-list>
+    
+    <ul class="list card">   
+        
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Pushnotification
+    </ion-toggle>
+        
+      <ion-item>
+          <div class="item-icon-left item-icon-right"> <i class="icon ion-person-stalker icon-ffk-style"></i>
+            Profiles<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </div>
+        </ion-item>
+      <ion-item>
+        <i class="icon ion-paintbrush"></i>
+            <div class="item-icon-left item-icon-right"> <i class="icon ion-paintbrush icon-ffk-style"></i>
+            Change app style<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </div>          
+      </ion-item>
+        
+      <ion-item>
+          <div class="item-icon-left item-icon-right" ng-click="shareSocialNetwork()"> <i class="icon ion-share icon-ffk-style"></i>
+            Share<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </div>  
+      </ion-item>
+        
+      <ion-item>
+        <div class="item-icon-left item-icon-right"> <i class="icon ion-thumbsup icon-ffk-style"></i>
+            Rate 5 to support author<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </div>            
+      </ion-item>
+        
+      <ion-item>
+        <a ng-href="mailto:'lehuydit@gmail.com'" class="item-icon-left item-icon-right"> <i class="icon ion-ios-email icon-ffk-style"></i>
+            Feedback<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </a>            
+      </ion-item>
+        
+        
+        
+        
+      <ion-item>
+          <div class="item-icon-left item-icon-right"> <i class="icon ion-log-out icon-ffk-style"></i>
+            Sign out<i class="icon ion-arrow-right-c icon-ffk-style"></i>
+            </div>  
+      </ion-item>
+    </ul>
+        
+        
+    </ion-list>
+  </ion-content>
+</ion-view>

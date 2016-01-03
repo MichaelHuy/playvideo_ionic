@@ -1,0 +1,5 @@
+FFK.value('ADMOB_CREDENTIALS',{
+    APP_ID: 'fl0QLml178ZFCug00Jsm4Yhj36ICvMbOd2GzNGU1',
+    JS_KEY: 'T5gySovfcWdTECTcB5IjQvUj0SG78alEPSPxgGai',
+    REST_API_KEY:'5qgTCTtwgd5DkkAgPCBlJPy2aaG3WcpxwKDroIBv'
+});

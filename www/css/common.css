@@ -1,0 +1,33 @@
+a {
+  color: #337ab7;
+  text-decoration: none !important;
+}
+.bar {
+  background: #df1f1f !important;
+}
+.bar.bar-stable .title {
+  color: white;
+}
+.bar-custom {
+  border-color: #ac0809 !important;
+  background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+  color: white !important;
+}
+
+.tabs {
+    background-color: #df1f1f;
+}
+ion-tabs.tabs-color-active-positive .tab-item {
+  color: white;
+}
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active {
+  color: rgb(36, 13, 244);
+}
+
+.bar-stable .button.button-clear {
+  color: white;
+
+}
+.icon-ffk-style {
+    color:rgb(104, 159, 56);
+}

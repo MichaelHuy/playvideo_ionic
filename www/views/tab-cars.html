@@ -1,0 +1,30 @@
+<ion-view view-title="Cars">
+    <ion-content>
+
+        <!--     <div id="results">
+      <div class="video" data-ng-repeat="video in results">
+          
+            <a class="item item-thumbnail-left" href="#/tab/cars/{{video.resourceId.videoId}}">
+              <img ng-src="{{ video.thumbnails.default.url }}">
+              <div class="wrap item-text-wrap">{{video.title}}</div>
+              <p>{{video.description}}</p>
+            </a>
+
+          
+      </div>
+    </div> -->
+        <ion-list>
+            <div data-ng-repeat="playlist in results track by $index">
+                <a class="item item-thumbnail-left" ng-click="viewMoviePlayList(playlist)">
+                    <img ng-src="{{ playlist.thumbnails.default.url }}">
+                    <div class="wrap item-text-wrap">{{playlist.title}}</div>
+                    <p>{{playlist.description}}</p>
+                </a>
+            </div>
+        </ion-list>
+        <!-- Load more item-->
+        <ion-infinite-scroll ng-if="hasMoreData" on-infinite="loadMore()" distance="40%"></ion-infinite-scroll>
+
+
+    </ion-content>
+</ion-view>
