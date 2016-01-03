@@ -9,6 +9,11 @@
     </author>
   <content src="index.html"/>
   <access origin="*"/>
+  <access origin="*" subdomains="true"/>
+  <access origin="m.youtube.com"/>
+  <access origin="s.youtube.com"/>
+  <access origin="index.html/*"/>
+  <preference name="AllowInlineMediaPlayback" value="false"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -16,6 +21,14 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-navigation href="http://*/*"/>
+  <allow-navigation href="https://*/*"/>
+  <allow-navigation href="data:*"/>
+  <allow-navigation href="content://*/*"/>
+  <allow-navigation href="file:///*/*"/>
+  <allow-navigation href="*"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>

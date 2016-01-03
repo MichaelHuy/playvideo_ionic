@@ -116,10 +116,11 @@ FFK.run(function($ionicPlatform, $cordovaGoogleAds, $rootScope, $window ) {
 
 })
 
-.config(function($httpProvider,$stateProvider, $urlRouterProvider, $sceDelegateProvider, $ionicConfigProvider) {
+.config(function($httpProvider,$stateProvider, $urlRouterProvider, $sceDelegateProvider, $ionicConfigProvider, $sceDelegateProvider) {
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-    
+    $sceDelegateProvider.resourceUrlWhitelist(['self', new RegExp('^(http[s]?):\/\/(w{3}.)?m\.youtube\.com/.+$')]);
+
     $ionicConfigProvider.tabs.position('bottom'); // other values: top
     
   $stateProvider
